@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "diasmp",
+  "version": "${version}",
+  "name": "Diamond SMP PvP",
+  "description": "Legit PvP HUD for Diamond SMP: armor durability, combo, target health, potion timers, item counts, CPS, ping, speed, zoom. Toggle everything in a GUI (Mod Menu or Right Shift).",
+  "authors": ["You"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.diasmp.pvp.DiaSmpPvp"],
+    "modmenu": ["com.diasmp.pvp.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}
